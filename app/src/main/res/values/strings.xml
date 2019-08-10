@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">DTH SOFT</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="Select_name">Select Name</string>
+    <string-array name="custname">
+        <item>Name</item>
+        <item>Name1</item>
+        <item>Name2</item>
+        <item>Name3</item>
+    </string-array>
+    <string-array name="username">
+        <item>abc</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+    </string-array>
+    <string-array name="arr">
+        <item>abc</item>
+        <item>bcdfdf</item>
+        <item>sfsgsg</item>
+        <item>eefg</item>
+        <item>eryur</item>
+    </string-array>
+    <string-array name="area">
+        <item>Area</item>
+        <item>Line1</item>
+        <item>Line2</item>
+        <item>Line3</item>
+        <item>Line4</item>
+
+
+    </string-array>
+
+</resources>

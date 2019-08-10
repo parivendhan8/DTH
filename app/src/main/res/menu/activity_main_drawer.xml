@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home_page"
+        android:icon="@drawable/house"
+        android:title="Home" />
+    <item
+        android:id="@+id/receipt"
+        android:icon="@drawable/receipt"
+        android:title="Receipt" />
+    <item
+        android:id="@+id/cust_bal"
+        android:icon="@drawable/balance"
+        android:title="Customer Balance" />
+    <item
+        android:id="@+id/statement"
+        android:icon="@drawable/statement64"
+        android:title=" Customer Statement" />
+
+    <item
+        android:id="@+id/new_col"
+        android:icon="@drawable/newcollection"
+        android:title="New Collection" />
+
+
+
+
+
+
+<!--<item android:title="Other">-->
+    <!--<menu>-->
+        <!--<item-->
+            <!--android:id="@+id/nav_about_us"-->
+            <!--android:title="nav_about_us" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_privacy_policy"-->
+            <!--android:title="privacy_policy" />-->
+    <!--</menu>-->
+<!--</item>-->
+
+</menu>

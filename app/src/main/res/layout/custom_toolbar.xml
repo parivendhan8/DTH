@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/titlebar">
+
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/notification_btn"-->
+            <!--android:layout_width="52dp"-->
+
+            <!--android:layout_height="55dp"-->
+
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:background="#0000"-->
+            <!--android:src="@drawable/newcollection"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/logout"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:layout_constraintVertical_bias="1.0"-->
+            <!--tools:ignore="MissingConstraints" />-->
+
+            <ImageButton
+                android:id="@+id/menu_icon"
+                android:layout_width="41dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:background="#0000"
+                android:src="@drawable/satellite32"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="192dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@+id/menu_icon"
+                android:layout_toRightOf="@+id/menu_icon"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="25"
+                android:text="Name"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/logout"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/menu_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.666"
+                tools:ignore="MissingConstraints" />
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/title_email"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_toEndOf="@+id/menu_icon"-->
+
+            <!--android:layout_toRightOf="@+id/menu_icon"-->
+            <!--android:ellipsize="end"-->
+            <!--android:gravity="center"-->
+            <!--android:maxLines="1"-->
+            <!--android:text="Email"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="15dp"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/menu_icon"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/title_name"-->
+            <!--app:layout_constraintVertical_bias="0.0"-->
+            <!--tools:ignore="MissingConstraints" />-->
+
+
+            <ImageButton
+                android:id="@+id/logout"
+                android:layout_width="49dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="#0000"
+                android:src="@drawable/logout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.38"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

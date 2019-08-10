@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/add64"
+        android:title="Add New" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/statement6464"
+        android:title="Statement" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/budgetbalance"
+        android:title="Customer Balance" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/house64"
+        android:title="Extra" />
+
+</menu>

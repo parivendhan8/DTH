@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="40dp"
+    android:orientation="vertical"
+    tools:context=".Customerbal">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewDeliveryProductList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="List of All Customer Balance"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!--<AutoCompleteTextView-->
+        <!--android:id="@+id/custname_scrl"-->
+        <!--android:layout_width="171dp"-->
+        <!--android:layout_height="42dp"-->
+        <!--android:layout_marginTop="48dp"-->
+        <!--android:entries="@array/custname"-->
+        <!--android:prompt="@string/app_name"-->
+        <!--android:hint="Select Name"-->
+        <!--android:textSize="10dp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--tools:ignore="MissingConstraints"></AutoCompleteTextView>-->
+        <AutoCompleteTextView
+            android:id="@+id/actv"
+            android:layout_width="195dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:completionHint="Name"
+            android:completionThreshold="1"
+            android:hint="Name"
+            android:maxHeight="37dp"
+            android:maxEms="1"
+            android:maxLines="1"
+            android:popupBackground="@android:color/white"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+
+        <!--<com.example.autocompletetextviewdb.CustomAutoCompleteView-->
+            <!--android:id="@+id/myautocomplete"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:completionThreshold="1" >-->
+        <!--</com.example.autocompletetextviewdb.CustomAutoCompleteView>-->
+        <!--<TextView-->
+            <!--android:id="@+id/text_view_countries"-->
+            <!--android:layout_width="89dp"-->
+            <!--android:layout_height="34dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:paddingBottom="16dp"-->
+            <!--android:text="Name"-->
+            <!--android:textSize="20sp"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/cust_area_spin"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/actv"-->
+            <!--app:layout_constraintVertical_bias="0.0" />-->
+
+        <AutoCompleteTextView
+            android:id="@+id/cust_area_spin"
+            android:layout_width="193dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:completionHint="Name"
+            android:completionThreshold="1"
+            android:hint="Area"
+            android:popupBackground="@android:color/white"
+            android:prompt="@string/app_name"
+
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actv"
+            tools:ignore="MissingConstraints"></AutoCompleteTextView>
+
+        <Button
+            android:id="@+id/printid"
+            android:layout_width="80dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="Print"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cust_area_spin"
+            app:layout_constraintVertical_bias="0.567"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/searchidbalanc"
+            android:layout_width="80dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="Search"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintStart_toEndOf="@+id/printid"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.964"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<HorizontalScrollView-->
+    <!--android:id="@+id/horizontalScrollView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="539dp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:paddingTop="20dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+
+    <!--&gt;-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDeliveryProductList"
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+
+        android:nestedScrollingEnabled="false"
+        android:paddingTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="30dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:listitem="@layout/table_list_item" />
+    <!--</HorizontalScrollView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
